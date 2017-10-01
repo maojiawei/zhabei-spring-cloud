@@ -14,6 +14,8 @@
         <module>zhabei-eureka</module>
         <module>zhabei-config-server</module>
         <module>zhabei-config-client</module>
+        <module>zhabei-ribbon</module>
+        <module>zhabei-client-back</module>
     </modules>
 
 
