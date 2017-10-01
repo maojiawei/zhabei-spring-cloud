@@ -37,6 +37,11 @@ public class RibbonDemoController {
     private RestTemplate restTemplate;
 
     @GetMapping("/addribbon")
+    public String addribbon(Integer c,Integer d) {
+       return restTemplate.getForObject("http://zhabei-client/add?a="+c+"&b="+d,String.class);
+    }
+
+    @GetMapping("/testload")
     public void logUserInstance() {
         ServiceInstance serviceInstance = this.loadBalancerClient.choose("zhabei-client");
         // 打印当前选择的是哪个节点
