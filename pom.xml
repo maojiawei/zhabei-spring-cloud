@@ -16,6 +16,7 @@
         <module>zhabei-config-client</module>
         <module>zhabei-ribbon</module>
         <module>zhabei-client-back</module>
+        <module>zhabei-feign</module>
     </modules>
 
 
