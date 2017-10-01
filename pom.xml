@@ -13,6 +13,7 @@
         <module>zhabei-client</module>
         <module>zhabei-eureka</module>
         <module>zhabei-config-server</module>
+        <module>zhabei-config-client</module>
     </modules>
 
 
