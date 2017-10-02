@@ -32,18 +32,6 @@
         </dependency>
     </dependencies>
 
-    <!-- 引入spring cloud的依赖 -->
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Camden.SR4</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <!-- 添加spring-boot的maven插件 -->
     <build>

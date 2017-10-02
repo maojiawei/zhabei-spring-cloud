@@ -20,19 +20,6 @@
         </dependency>
     </dependencies>
 
-    <!--依赖管理，用于管理spring-cloud的依赖，其中Camden.SR3是版本号-->
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Camden.SR3</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <!-- 添加spring-boot的maven插件 -->
     <build>
         <plugins>

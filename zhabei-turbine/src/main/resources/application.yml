@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: hystrix-dashboard-turbine
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+turbine:
+  appConfig: zhabei-client, zhabei-feign
+  aggregator:
+    cluster-config: default
+  clusterNameExpression: new String("default")
+eureka:
+  client:
+    service-url:
+      default-zone:
+server:
+  port: 8097

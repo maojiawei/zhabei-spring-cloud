@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: zhabei-feign
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: admin
+      password: admin
 eureka:
   client:
     serviceUrl:

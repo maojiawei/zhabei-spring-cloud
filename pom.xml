@@ -19,6 +19,7 @@
         <module>zhabei-feign</module>
         <module>zhabei-zuul</module>
         <module>zhabei-hystrix-dashboard</module>
+        <module>zhabei-turbine</module>
     </modules>
 
 
