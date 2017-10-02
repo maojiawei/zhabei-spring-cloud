@@ -17,6 +17,8 @@
         <module>zhabei-ribbon</module>
         <module>zhabei-client-back</module>
         <module>zhabei-feign</module>
+        <module>zhabei-zuul</module>
+        <module>zhabei-hystrix-dashboard</module>
     </modules>
 
 
