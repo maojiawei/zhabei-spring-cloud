@@ -20,6 +20,7 @@
         <module>zhabei-zuul</module>
         <module>zhabei-hystrix-dashboard</module>
         <module>zhabei-turbine</module>
+        <module>zhabei-zipkin</module>
     </modules>
 
 
