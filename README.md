@@ -8,7 +8,14 @@
  
 ## 项目应用准备
 1.rabbitmq
-
+```
+docker run -d \
+ --name=spring-cloud-rabbitmq \
+ -p 5672:5672 \
+ -e RABBITMQ_DEFAULT_USER=admin \
+ -e RABBITMQ_DEFAULT_PASS=admin \
+ rabbitmq:3.6.6-management
+```
 
 ## 项目说明
 均为标准SpringBoot构建项目，可使用`mvn spring-boot:run -Dserver.port=[port]`形式进行启动。或者在package打包后使用java -jar xxx.jar形式。

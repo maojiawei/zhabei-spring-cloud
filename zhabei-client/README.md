@@ -51,7 +51,26 @@ public class ClientApplication {
 ```
 
 ## 项目接口
-主要查看DemoController，直接暴露restful接口。
+主要查看DemoController，直接暴露restful接口。  
+项目提供get请求方法，计算a+b的值。  
+```
+@RestController
+public class DemoController {
+    private final Logger logger = Logger.getLogger(getClass());
+    
+    @Autowired
+    private DiscoveryClient client;
+
+    @GetMapping("/add")
+    public Integer add(@RequestParam Integer a, @RequestParam Integer b) {
+        ServiceInstance instance = client.getLocalServiceInstance();
+        Integer r = a + b;
+        logger.info("/add, host:" + instance.getHost() + ", service_id:" + instance.getServiceId() + ", result:" + r);
+        return r;
+    }
+
+}
+```
 
 ## 配置文件
 server.port为项目端口。
